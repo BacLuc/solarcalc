@@ -43,11 +43,11 @@ INSERT INTO `panel` (`name`, `description`, `power`, `peak_power`, `price`, `sto
 INSERT INTO `panel` (`name`, `description`, `power`, `peak_power`, `price`, `stock`) VALUES ('Panel 300W', 'Future Panel, more powerful', 300, 350, 80000, 0);
 
 
-INSERT INTO `battery` (`name`, `description`, `dod`, `voltage`, `loss`, `discharge`, `lifespan`, `capacity`, `price`, `stock`, `max_const_current`, `max_peak_current`, `avg_const_current`, `max_humidity`, `max_temperature`) VALUES ('Battery ACP 80Ah', 'Lead battery, 40kg, 80Ah', 0.5, 12.8, 0.2, 0.1, 500, 80, 50000, 3, 300, 3000, 30, 50, 25);
+INSERT INTO `battery` (`name`, `description`, `dod`, `voltage`, `loss`, `discharge`, `lifespan`, `capacity`, `price`, `stock`, `max_const_current`, `max_peak_current`, `avg_const_current`, `max_humidity`, `max_temperature`) VALUES ('Battery ACP 80Ah', 'Lead battery, 40kg, 80Ah', 50, 12.8, 20, 10, 500, 80, 50000, 3, 300, 3000, 30, 50, 25);
 
-INSERT INTO `battery` (`name`, `description`, `dod`, `voltage`, `loss`, `discharge`, `lifespan`, `capacity`, `price`, `stock`, `max_const_current`, `max_peak_current`, `avg_const_current`, `max_humidity`, `max_temperature`) VALUES ('Battery LFT 100Ah', 'LiFePO4 Battery, 15kg, 100Ah', 0.85, 12.8, 0.01, 0.03, 2000, 100, 250000, 10, 300, 3000, 30, 75, 65);
+INSERT INTO `battery` (`name`, `description`, `dod`, `voltage`, `loss`, `discharge`, `lifespan`, `capacity`, `price`, `stock`, `max_const_current`, `max_peak_current`, `avg_const_current`, `max_humidity`, `max_temperature`) VALUES ('Battery LFT 100Ah', 'LiFePO4 Battery, 15kg, 100Ah', 85, 12.8, 1, 3, 2000, 100, 250000, 10, 300, 3000, 30, 75, 65);
 
-INSERT INTO `battery` (`name`, `description`, `dod`, `voltage`, `loss`, `discharge`, `lifespan`, `capacity`, `price`, `stock`, `max_const_current`, `max_peak_current`, `avg_const_current`, `max_humidity`, `max_temperature`) VALUES ('Battery LFT 100Ah W', 'Winston LiFeYPO4 Battery, 15kg, 100Ah', 0.85, 12.8, 0.005, 0.03, 3000, 100, 275000, 4, 300, 3000, 30, 80, 65);
+INSERT INTO `battery` (`name`, `description`, `dod`, `voltage`, `loss`, `discharge`, `lifespan`, `capacity`, `price`, `stock`, `max_const_current`, `max_peak_current`, `avg_const_current`, `max_humidity`, `max_temperature`) VALUES ('Battery LFT 100Ah W', 'Winston LiFeYPO4 Battery, 15kg, 100Ah', 85, 12.8, 0.5, 3, 3000, 100, 275000, 4, 300, 3000, 30, 80, 65);
 
 
 INSERT INTO `inverter` (`name`, `description`, `loss`, `voltage`, `max_current`, `price`, `stock`) VALUES ('Inverter standart', 'normal inverter', 0.01,12.8,10,15000,10);
