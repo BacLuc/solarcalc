@@ -2,4 +2,5 @@
 test/
 config.php
 solarcalc-*.sql
+.idea
 

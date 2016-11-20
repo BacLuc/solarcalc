@@ -66,7 +66,10 @@ function solaradapter($cload, $sunhours, $database) {
     $result      = $database->query($query) or die(mysqli_error($database));
     
     while ($data = $result->fetch_assoc()) {
-        $value = round($data["dod"] * $data["capacity"] / (1 + $data["loss"]),1);
+        //first we have to calculate the percentage of usable battery capacity
+        $realcapacityRatio = round($data["dod"] * $data["capacity"] / (1 + $data["loss"]),1);
+        //then we multiply with usable battery capacity
+        $value = $realcapacityRatio * $data["capacity"];
         $bin[] = [ 'type' => $data['type'], 'value' => $value ];
     }
     $result->free();
